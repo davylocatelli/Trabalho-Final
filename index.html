@@ -6,7 +6,7 @@
     <title>Livraria </title>
     <link rel="shortcut icon" href="img/3771284.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="script" href="myscript.js">
+    <script src="myscript.js"></script>
 </head>
 <body>
     <header>
@@ -25,61 +25,36 @@
                 <img src="img/liv 1.jpg" alt="Livro 1">
                 <h2>Livro Incrível</h2>
                 <p>Autor: João Silva</p>
-                <button id="remov" class="botao" onclick="remover()"><h4><b> - </b></h4></button>
-                <button class="car"><b>Adicionar ao Carrinho</b></button>
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
+                <h3>R$</h3><input class="none" value="40" readonly id="idPreço1">
+                <h3>Selecione a quantidade:</h3>
+                <input type="number" id="idQuantidade" min="0"> <br>
+                <button onclick="total()"> Ver Total </button><br>
+                <input type="text" readonly id="preçototal1">
             </div>
 
             <div class="card">
                 <img src="img/livr 2.jpg" alt="Livro 2">
                 <h2>Livro Fantástico</h2>
                 <p>Autor: Maria Santos</p>
-                <button id="remov" class="botao" onclick="remover()"><h4><b> - </b></h4></button>
-                <button class="car"><b>Adicionar ao Carrinho</b></button>
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
+                <h3>R$</h3><input class="none" value="40" readonly id="idPreço2"> 
+                <h3>Selecione a quantidade:</h3> 
+                <input type="number" id="quantidade2" min="0">
+                <button onclick="total2()"> Ver Total </button><br>
+                <h3>Total:</h3>  <input type="number" readonly id="preçototal2">
             </div>
 
             <div class="card">
                 <img src="img/livro 3.webp" alt="Livro 3">
                 <h2>Aventuras Mágicas</h2>
                 <p>Autor: Pedro Almeida</p>
-                <button id="remov" class="botao" onclick="remover()"><h4><b> - </b></h4></button>
-                <input type="number" readonly id="quantidade">
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
+                <h3>R$</h3><input class="none" value="40" readonly id="idPreço3">
+                <h3>Selecione a quantidade:</h3>
+                <input type="number" id="quantidade3" min="0">
+                <button onclick="total3()"> Ver Total </button><br>
+                <h3>Total:</h3>  <input type="number" readonly id="preçototal3">
             </div>
         </section>
     </main>
-    <main>
-        <section class="cards">
-            <div class="card">
-                <img src="img/livr 4.jpg" alt="Livro 4">
-                <h2>O Mar Incrível</h2>
-                <p>Autor:Amanda da Silva</p>
-                <button id="remov" class="botao" onclick="remover()"><h4><b> - </b></h4></button>
-                <button class="car"><b>29,99</b></button>
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
-            </div>
-
-            <div class="card">
-                <img src="img/livr 5.webp" alt="Livro 5">
-                <h2>Livro exótico</h2>
-                <p>Autor: Maria Teixeira</p>
-                <button id="remov" onclick="remover()"><h4><b> - </b></h4></button>
-                <button class="car"><b>24,49</b></button>
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
-            </div>
-
-            <div class="card">
-                <img src="img/livr 6.jpg" alt="Livro 6">
-                <h2 >Ciência Psicologica</h2>
-                <p>Autor: Albert Einstein</p>
-                <button id="remov" class="botao" onclick="remover()"><h4><b> - </b></h4></button>
-                <button class="car"><b>29,90</b></button>
-                <button id="add" class="botao" onclick="adicionar()"><h4><b> + </b></h4></button>
-            </div>
-        </section>
-    </main>
-
     <footer>
         <p> &copy; 2023 Livraria | Criado por Davy Locatelli, Gabriela Prigol e Rafaela Scolaro</p>
     </footer>

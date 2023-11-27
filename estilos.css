@@ -20,7 +20,7 @@ body{
 }
 
 header{
-    background-color: #530000;
+    background-color: #630303;
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -57,13 +57,18 @@ nav a {
 main {
     padding: 20px;
     overflow: hidden;
+} 
+
+button {
+    width: 200px;
 }
 
 .card {
     width: calc(33.33% - 20px);
-    height: 700px;
+    height: 750px;
     margin: 10px;
     padding: 20px;
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -109,7 +114,7 @@ h3{
 }
 
 .card button:hover {
-    background-color: #555; 
+    background-color: #630303; 
 }
 
 footer {
@@ -194,6 +199,19 @@ input[type="number"],
     font-family: 'Montserrat';
     transition: background-color 0.3s ease; 
 } 
+
+.btn{
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    font-family: 'Raleway';
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    height: 80px;
+}
 
 /*
 input[type="text"] {

@@ -7,6 +7,7 @@ h1 {
     letter-spacing: 5px;
     padding-bottom: 14px;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -17,6 +18,11 @@ body{
     font-family: 'Monstserrat', sans-serif;
     font-size: 20px;
     background-color: #e79595;
+}
+
+.form{
+    color: white;
+    text-align: left;
 }
 
 header{
@@ -48,11 +54,22 @@ nav li:hover {
     padding-left: 20px;
     transition: all 1.0s ease-in;
 }
-nav a {
+a {
     text-decoration: none; 
     font-weight: bold;
     color: #fff;
 }
+
+a:visited {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #fff;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}
+
 
 main {
     padding: 20px;
@@ -182,7 +199,8 @@ form legend {
 }
 
 input[type="number"],
-[type="text"] {
+[type="text"],
+[type="email"] {
     width: 100%;
     color: #ffffff;
     text-align: center;
@@ -211,6 +229,7 @@ input[type="number"],
     font-weight: bold;
     margin: 10px;
     height: 80px;
+    text-decoration: none;
 }
 
 /*

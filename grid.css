@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
+
+h1 {
+    font-family: 'Raleway';
+    font-size: 60px;
+    letter-spacing: 5px;
+    padding-bottom: 14px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Monstserrat', sans-serif;
+    font-size: 20px;
+    background-color: #f1c4c4;
+    text-align: center;
+}
+
+.form{
+    color: white;
+    text-align: left;
+}
+
+header{
+    background-color: #630303;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+nav li:hover {
+    background-color: #0000006b;
+    border-radius: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px; 
+    padding-right: 20px;
+    padding-left: 20px;
+    transition: all 1.0s ease-in;
+}
+a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #fff;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+main {
+    padding: 20px;
+    overflow: hidden;
+} 
+
+button {
+    width: 200px;
+}
+
+footer {
+    background-color: #530000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+form{
+    overflow: hidden;
+    text-align: center;
+}
+
+form fieldset {
+    border: 1px solid #530000;
+    width: 1000px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h2{
+    font-family: 'Raleway';
+}
+input[type="number"],
+[type="text"],
+[type="email"],
+textarea {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgb(143, 48, 48);
+    border-radius: 5px;
+    color: #fff;
+    font-style: inherit;
+    border: none;
+    width: 200px;
+    padding: 15px 29px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    font-size: 15px;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s ease; 
+    float: right;
+} 
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.603);
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+.btn{
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: right;
+    font-family: 'Raleway';
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    height: 80px;
+    text-decoration: none;
+}
+
+.finalizar{
+    padding-right: 430px
+}
+
+
+
+
+
+
+
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 24.99%;
+}
+
+.col-4 {
+    width: 33.32%;
+}
+
+.col-5 {
+    width: 41.65%;
+}
+
+.col-6 {
+    width: 49.98%;
+}
+
+.col-7 {
+    width: 58.31%;
+}
+
+.col-8 {
+    width: 66.64%;
+}
+
+.col-9 {
+    width: 74.97%;
+}
+
+.col-10 {
+    width: 83.3%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 99.96%;
+}

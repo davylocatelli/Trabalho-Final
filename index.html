@@ -26,9 +26,9 @@
                 <p>Autor: João Silva</p>
                 R$<input class="none" value="40" readonly id="idPreço1">
                 <h3>Selecione a quantidade:</h3>
-                Un <input type="number" onclick="total()" id="idQuantidade" min="0"> <br>
+                Un <input type="number" onclick="total()" id="idQuantidade" min="0" style="width: 200px;"> <br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal1">
+                R$ <input type="text" readonly id="preçototal1" style="width: 200px;">
             </div>
 
             <div class="card">
@@ -37,27 +37,60 @@
                 <p>Autor: Maria Santos</p>
                 R$<input class="none" value="20" readonly id="idPreço2"> 
                 <h3>Selecione a quantidade:</h3> 
-                Un <input type="number" onclick="total2()" id="quantidade2" min="0"><br>
+                Un <input type="number" onclick="total2()" id="quantidade2" min="0" style="width: 200px;"><br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal2">
+                R$ <input type="text" readonly id="preçototal2" style="width: 200px;">
             </div>
 
             <div class="card">
                 <img src="img/livro 3.webp" alt="Livro 3">
                 <h2>Aventuras Mágicas</h2>
                 <p>Autor: Pedro Almeida</p>
-                R$<input class="none" value="30" readonly id="idPreço3">
+                R$<input class="none" value="30" readonly id="idPreço3" >
                 <h3>Selecione a quantidade:</h3>
-                Un <input type="number" onclick="total3()" id="quantidade3" min="0"><br>
+                Un <input type="number" onclick="total3()" id="quantidade3" min="0" style="width: 200px;"><br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal3">
+                R$ <input type="text" readonly id="preçototal3" style="width: 200px;">
             </b>
             </div>
         </section>
         <div class="finalizar">
-        <button class=btn id="finalizar"><a href="cadastro.html">Finalizar Compra</a></button> 
+        <!--<button class=btn id="finalizar"><a href="cadastro.html">Finalizar Compra</a></button> -->
         <button class=btn id="tot" onclick="totalfinal()">Ver Total</button>     
-        <input class="btn" type="text" readonly id="preçototal"> 
+        <input class="btn" type="text" readonly id="preçototal" style="width: 200px;"> 
+        </div>
+
+    </main>
+    <main>
+        <h2>Formulário de Registro</h2><br>
+        <form class="formul" id="meuFormulario" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+            <center>
+        <fieldset>
+            <input class="col-12 form" type="text" id="nome" name="nome" required maxlength="50" placeholder="Seu Nome Completo">
+            <br>
+
+            <input  class="col-12 form" type="text" id="cpf" name="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="Seu CPF (123.456.789-00)" required>
+            <br>
+
+            <input class="col-12 form" type="email" id="email" name="email" required placeholder="Seu Email@gmail.com">
+            <br>
+
+           
+            <input class="col-12 form" type="text" id="numTelefone" name="numTelefone" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="Seu Número de Telefone (12 34567-8901)" required>
+            <br>
+
+
+            <input class="col-12 form" type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="Seu CEP (12345-678)" required>
+            <br>
+
+            <textarea class="col-12 form"  name="textoemail" id="tEmail" cols="100%" rows="10" readonly></textarea>
+            <h2 onclick="textoemail()" id="gerarEmail" class="btn1">Gerar Email</h2>
+
+        </fieldset>
+        </center>
+        <div class="finalizar">
+        <input type="submit" class="btn" id="finalizar" onclick="validar()" value="Finalizar Compra" style="padding-left: 10px; padding-right: 10px;">
+        
         </div>
 
     </main>

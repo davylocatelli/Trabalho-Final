@@ -20,6 +20,11 @@ body{
     background-color: #e79595;
 }
 
+h2{
+    font-family: 'Raleway';
+    text-align: center;
+}
+
 .form{
     color: white;
     text-align: left;
@@ -198,18 +203,36 @@ form legend {
     font-size: 14px;
 }
 
+input .form,
+textarea {
+    width: 978px;
+    color: #ffffff;
+    text-align: left;
+    background-color: rgb(143, 48, 48);
+    border-radius: 5px;
+    color: #fff;
+    font-style: inherit;
+    border: none;
+    padding: 15px 29px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer; 
+    font-size: 15px;
+    font-family: 'Montserrat';
+    transition: background-color 0.3s ease; 
+    float: right;
+} 
+
 input[type="number"],
 [type="text"],
 [type="email"] {
     width: 100%;
     color: #ffffff;
-    text-align: center;
-    background-color: #ad0101;
+    background-color: rgb(143, 48, 48);
     border-radius: 5px;
     color: #fff;
     font-style: inherit;
     border: none;
-    width: 200px;
     padding: 15px 29px;
     margin-top: 10px;
     cursor: pointer; 
@@ -217,6 +240,75 @@ input[type="number"],
     font-family: 'Montserrat';
     transition: background-color 0.3s ease; 
 } 
+
+form{
+    overflow: hidden;
+    text-align: center;
+}
+
+form fieldset {
+    border: 1px solid #530000;
+    width: 1000px;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form legend {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #fff;
+}
+
+a:visited {
+    text-decoration: none; 
+    font-weight: bold;
+    color: #fff;
+}
+
+a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+main {
+    padding: 20px;
+    overflow: hidden;
+} 
+
+button {
+    width: 200px;
+}
+
+input::placeholder{
+    color: rgba(255, 255, 255, 0.603);
+    font-family: 'Montserrat';
+    text-align: left;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgb(143, 48, 48) inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
 
 .btn{
     text-align: center;
@@ -230,6 +322,27 @@ input[type="number"],
     margin: 10px;
     height: 80px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.btn1{
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: inline-end;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    padding-bottom: 30px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.finalizar{
+    padding-right: 430px
 }
 
 /*

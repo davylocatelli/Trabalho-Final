@@ -16,6 +16,7 @@ function total() {
   total1 = preço1 * quant
   console.log(total1)
   document.getElementById("preçototal1").value = total1
+  quantTotal = quantTotal + quant
 }
 
 function total2() {
@@ -39,9 +40,10 @@ function total3() {
   document.getElementById("preçototal3").value =total3
 }
 
-quantTotal.push(quantidade1)
 quantTotal.push(quantidade2)
 quantTotal.push(quantidade3)
+
+//o prof disse que essa parte está errada, a parte do push.
 
 console.log(quantTotal)
 
@@ -59,11 +61,14 @@ console.log(preçoTotal)
 console.log(quantidade)
 console.log(livros)*/
 
-function validar(){
-if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
-  alert("Email Inválido")
-  return
-}
+function validarEmail() {
+  var email = document.getElementById("idEmail").value
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      alert("Email inválido")
+      return false
+  }else{
+      return true
+  }
 }
 
 function textoemail() {

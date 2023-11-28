@@ -107,40 +107,31 @@ function checkout() {
 }*/
 
 var livros = ["Livro Incrível", "Livro Fantástico", "Aventuras Mágicas"];
-var quantidade1 = [];
-var quantidade2 = [];
-var quantidade3 = [];
-var quantTotal = 0;
 var preçoTotal = 0;
 
 function total() {
   var total1 = 0;
   var preço1 = document.getElementById("idPreço1").value;
   var quant = document.getElementById("idQuantidade").value;
-  quantidade1.push(parseInt(quant));
   total1 = preço1 * quant;
   document.getElementById("preçototal1").value = total1;
-  quantTotal = quantTotal + parseInt(quant);
 }
 
 function total2() {
   var total2 = 0;
   var preço2 = document.getElementById("idPreço2").value;
   var quant = document.getElementById("quantidade2").value;
-  quantidade2.push(parseInt(quant));
   total2 = preço2 * quant;
   document.getElementById("preçototal2").value = total2;
-  quantTotal = quantTotal + parseInt(quant);
 }
 
 function total3() {
   var total3 = 0;
   var preço3 = document.getElementById("idPreço3").value;
   var quant = document.getElementById("quantidade3").value;
-  quantidade3.push(parseInt(quant));
   total3 = preço3 * quant;
   document.getElementById("preçototal3").value = total3;
-  quantTotal = quantTotal + parseInt(quant);
+
 }
 
 function totalfinal() {
@@ -150,12 +141,17 @@ function totalfinal() {
   var t3 = document.getElementById("preçototal3").value
   totalfim = parseInt(t1) + parseInt(t2) + parseInt(t3)
   document.getElementById("preçototal").value = "R$" + totalfim
-  preçoTotal = document.getElementById(preçototal)
 
 }
 function textoemail() {
+  var quantTotal = 0
+  q1 = document.getElementById("idQuantidade").value
+  q2 = document.getElementById("quantidade2").value
+  q3 = document.getElementById("quantidade3").value
+  quantTotal = parseInt(q1) + parseInt(q2) + parseInt(q3)
   var nome = document.getElementById("nome").value
   var cpf = document.getElementById("cpf").value
+  preçoTotal = document.getElementById("preçototal").value
   console.log(cpf)
-  document.getElementById("tEmail").value = nome + " do cpf: " + cpf + " comprou " + quantTotal + " gastando o total de " + "R$" + preçoTotal
+  document.getElementById("tEmail").value = nome + " do cpf: " + cpf + " comprou " + quantTotal + " livros. " + "Gastando o total de " + preçoTotal
 }

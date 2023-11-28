@@ -128,7 +128,7 @@ input[type="number"],
 textarea {
     width: 100%;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
     background-color: rgb(143, 48, 48);
     border-radius: 5px;
     color: #fff;
@@ -151,6 +151,14 @@ input::placeholder{
     text-align: left;
 }
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgb(143, 48, 48) inset;
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: rgb(255, 255, 255) !important;
+}
+
 .btn{
     text-align: center;
     background-color:#530000;
@@ -163,6 +171,22 @@ input::placeholder{
     margin: 10px;
     height: 80px;
     text-decoration: none;
+}
+
+.btn1{
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: inline-end;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    padding-bottom: 30px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .finalizar{

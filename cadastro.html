@@ -6,13 +6,7 @@
     <title>Livraria </title>
     <link rel="shortcut icon" href="img/3771284.png" type="image/x-icon">
     <link rel="stylesheet" href="grid.css">
-    <script src="myscript.js">
-        document.getElementById("meuFormulario").addEventListener("submit", function (event) {
-
-
-            this.submit();
-        });
-    </script>
+    <script src="myscript.js"></script>
 </head>
 <body>
     <header>
@@ -46,12 +40,13 @@
             <input class="col-12" type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" placeholder="Seu CEP (12345-678)" required>
             <br>
 
-            <textarea class="col-12"  name="textoemail" id="tEmail" cols="100%" rows="10"></textarea>
+            <textarea class="col-12"  name="textoemail" id="tEmail" cols="100%" rows="10" readonly></textarea>
+            <h2 onclick="textoemail()" id="gerarEmail" class="btn1">Gerar Email</h2>
+
         </fieldset>
         </center>
-
         <div class="finalizar">
-        <button class=btn id="finalizar" onclick="totalfinal()">Finalizar Compra</button> 
+        <input type="submit" class="btn" id="finalizar" onclick="validar()" value="Finalizar Compra" style="padding-left: 10px; padding-right: 10px;">
         
         </div>
 

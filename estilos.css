@@ -345,6 +345,12 @@ input:-webkit-autofill {
     padding-right: 430px
 }
 
+.float{
+    float: left;
+    padding-top: 13px;
+    
+}
+
 /*
 input[type="text"] {
     width: 100%;

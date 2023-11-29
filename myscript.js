@@ -144,14 +144,44 @@ function totalfinal() {
 
 }
 function textoemail() {
-  var quantTotal = 0
+  var livros = ["Incrível", "Fantástico", "Aventuras Mágicas"];
+  var quantidade = []
   q1 = document.getElementById("idQuantidade").value
   q2 = document.getElementById("quantidade2").value
   q3 = document.getElementById("quantidade3").value
+  quantidade.push(q1)
+  quantidade.push(q2)
+  quantidade.push(q3)
+
+  var totais = [];
+  var t1 = document.getElementById("preçototal1").value
+  var t2 = document.getElementById("preçototal2").value
+  var t3 = document.getElementById("preçototal3").value
+  totais.push(t1)
+  totais.push(t2)
+  totais.push(t3)
+
   quantTotal = parseInt(q1) + parseInt(q2) + parseInt(q3)
   var nome = document.getElementById("nome").value
   var cpf = document.getElementById("cpf").value
+
+
   preçoTotal = document.getElementById("preçototal").value
   console.log(cpf)
-  document.getElementById("tEmail").value = nome + " do cpf: " + cpf + " comprou " + quantTotal + " livros. " + "Gastando o total de " + preçoTotal
+  document.getElementById("tEmail").value = nome + " do cpf: " + cpf + " comprou " + quantidade[0] + " unidades do livro " + livros[0] + " gastando o total de R$" + totais[0] +
+  ", comprou " + quantidade[1] + " unidades do livro " + livros[1] + " gastando o total de R$" + totais[1] + " e comprou " + quantidade[2] + " unidades do livro " + livros[2] + " gastando o total de R$" + totais[2] + ". Livraria por Davy Locatelli, Rafaela Scolaro e Gabriela Prigol."
+}
+
+function validar() {
+  var email = document.getElementById("idEmail").value
+  if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    alert("Email inválido")
+    return
+  }
+
+  var preço = document.getElementById("preçototal").value
+  if(preço = "R$0"){
+    alert("Precisa comprar algo!")
+    return
+  }
 }

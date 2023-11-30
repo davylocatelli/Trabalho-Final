@@ -86,14 +86,71 @@ function textoemail() {
   document.getElementById("tEmail").value = nome + " do cpf: " + cpf + " comprou " + quantidade[0] + " unidades do livro " + livros[0] + " gastando o total de R$" + totais[0] +
   ", comprou " + quantidade[1] + " unidades do livro " + livros[1] + " gastando o total de R$" + totais[1] + " e comprou " + quantidade[2] + " unidades do livro " + livros[2] + " gastando o total de R$" + totais[2] + ". Livraria por Davy Locatelli, Rafaela Scolaro e Gabriela Prigol."
 
-  preçoTotal = document.getElementById("preçototal").value
-  localStorage.setItem(preçoTotal)
-  document.getElementById(vendas).value = localStorage
 }
 
-function vendas() {
+/*function vendas() {
+  var t1 = document.getElementById("preçototal1").value
+  var t2 = document.getElementById("preçototal2").value
+  var t3 = document.getElementById("preçototal3").value
+  var PreçoTotal = parseInt(t1) + parseInt(t2) + parseInt(t3)
 
+  // Verifica se o valor é válido antes de adicioná-lo ao array e armazená-lo no localStorage
+  if (!isNaN(PreçoTotal)) {
+    var arrayTotal = [];
+    arrayTotal.push(PreçoTotal);
+
+    localStorage.setItem('arrayTotalSalvo', JSON.stringify(arrayTotal));
+  } else {
+    console.error("Valor inválido. Certifique-se de inserir um número.");
+  }
+
+  var totalVendasArray = JSON.parse(localStorage.getItem('arrayTotalSalvo'));
+
+  // Calcula o total de vendas
+  var totalVendas = totalVendasArray.reduce((acc, curr) => acc + curr, 0);
+
+  // Armazena o total de vendas no localStorage
+  localStorage.setItem('total_vendas', totalVendas);
+
+  // Atualiza o valor no elemento com id "vendas"
+  document.getElementById('vendas').value = totalVendas;
 }
+*/
+
+function vendasTotais() {
+  var t1 = document.getElementById("preçototal1").value;
+  var t2 = document.getElementById("preçototal2").value;
+  var t3 = document.getElementById("preçototal3").value;
+  
+  var PreçoTotal = parseInt(t1) + parseInt(t2) + parseInt(t3);
+
+  // Verifica se o valor é válido antes de adicioná-lo ao array e armazená-lo no localStorage
+  if (!isNaN(PreçoTotal)) {
+    var arrayTotal = [];
+    arrayTotal.push(PreçoTotal);
+
+    localStorage.setItem('arrayTotalSalvo', JSON.stringify(arrayTotal));
+  } else {
+    console.error("Valor inválido. Certifique-se de inserir um número.");
+  }
+
+  var totalVendas = 0; // Inicializa o total das vendas
+
+  // Recupera o array do localStorage
+  var arraySalvo = JSON.parse(localStorage.getItem('arrayTotalSalvo'));
+
+  // Itera sobre o array para calcular o total das vendas
+  for (let index = 0; index < arraySalvo.length; index++) {
+    totalVendas += arraySalvo[index];
+  }
+
+  localStorage.setItem('total_vendas', totalVendas);
+
+  // Atualiza o elemento HTML com o ID 'vendas' com o total de vendas
+  document.getElementById('vendas').value = totalVendas;
+}
+
+
 
 function validar() {
   var email = document.getElementById("email").value

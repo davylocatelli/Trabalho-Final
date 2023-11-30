@@ -347,9 +347,24 @@ input:-webkit-autofill {
 
 .float{
     float: left;
-    padding-top: 13px;
-    
+    padding-top: 15px;
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    font-family: 'Raleway';
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px;
+    padding-bottom: 30px;
+    margin: 15px;
+    height: 30px;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
 }
+    
 
 /*
 input[type="text"] {

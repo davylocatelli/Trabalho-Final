@@ -91,16 +91,24 @@ function textoemail() {
   document.getElementById(vendas).value = localStorage
 }
 
+function vendas() {
+
+}
+
 function validar() {
-  var email = document.getElementById("idEmail").value
+  var email = document.getElementById("email").value
   if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
     alert("Email inválido")
     return
   }
 
-  var preço = document.getElementById("preçototal").value
-  if(preço = " "){
+  q1 = document.getElementById("idQuantidade").value
+  q2 = document.getElementById("quantidade2").value
+  q3 = document.getElementById("quantidade3").value
+  quantTotal = parseInt(q1) + parseInt(q2) + parseInt(q3)
+  
+  if(quantTotal < 1){
     alert("Precisa comprar algo!")
-    return
+    return false
   }
 }

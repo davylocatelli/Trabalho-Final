@@ -26,9 +26,9 @@
                 <p>Autor: João Silva</p>
                 R$<input class="none" value="40" readonly id="idPreço1">
                 <h3>Selecione a quantidade:</h3>
-                Un <input type="number" onclick="total()" id="idQuantidade" min="0" style="width: 200px;"> <br>
+                Un <input type="number" onclick="total()" id="idQuantidade" value="0" min="0" style="width: 200px;"> <br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal1" style="width: 200px;">
+                R$ <input type="text" readonly id="preçototal1" value="0" style="width: 200px;">
             </div>
 
             <div class="card">
@@ -37,9 +37,9 @@
                 <p>Autor: Maria Santos</p>
                 R$<input class="none" value="20" readonly id="idPreço2"> 
                 <h3>Selecione a quantidade:</h3> 
-                Un <input type="number" onclick="total2()" id="quantidade2" min="0" style="width: 200px;"><br>
+                Un <input type="number" onclick="total2()" id="quantidade2" value="0" min="0" style="width: 200px;"><br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal2" style="width: 200px;">
+                R$ <input type="text" readonly id="preçototal2" value="0" style="width: 200px;">
             </div>
 
             <div class="card">
@@ -48,9 +48,9 @@
                 <p>Autor: Pedro Almeida</p>
                 R$<input class="none" value="30" readonly id="idPreço3" >
                 <h3>Selecione a quantidade:</h3>
-                Un <input type="number" onclick="total3()" id="quantidade3" min="0" style="width: 200px;"><br>
+                Un <input type="number" onclick="total3()" id="quantidade3" value="0" min="0" style="width: 200px;"><br>
                 <h3>Total:</h3>
-                R$ <input type="text" readonly id="preçototal3" style="width: 200px;">
+                R$ <input type="text" readonly id="preçototal3" value="0" style="width: 200px;">
             </b>
             </div>
         </section>
@@ -63,7 +63,7 @@
     </main>
     <main>
         <h2>Formulário de Registro</h2><br>
-        <form class="formul" id="meuFormulario" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+        <form class="formul" id="meuFormulario" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" onsubmit="return validar();">
             <center>
         <fieldset>
             <input class="col-12 form" type="text" id="nome" name="nome" required maxlength="50" placeholder="Seu Nome Completo">
@@ -90,7 +90,7 @@
         </center>
         <div class="finalizar">
         <input type="submit" class="btn" id="finalizar" onclick="validar()" value="Finalizar Compra" style="padding-left: 10px; padding-right: 10px;">
-        <h2 class="float ">Total de Vendas:</h2> <input class="float" type="text" readonly id="vendas" style="width: 100px;"></h2>
+        <input class="float" type="button" value="Total de Vendas" onclick="vendas()"><input class="float" type="text" readonly id="vendas" style="width: 100px;">
         </div>
 
     </main>

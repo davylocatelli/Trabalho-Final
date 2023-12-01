@@ -325,6 +325,22 @@ input:-webkit-autofill {
     cursor: pointer;
 }
 
+.btf{
+    text-align: center;
+    background-color:#530000;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    font-family: 'Raleway';
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 110px;
+    height: 80px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 .btn1{
     text-align: center;
     background-color:#530000;

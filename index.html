@@ -55,7 +55,6 @@
             </div>
         </section>
         <div class="finalizar">
-        <!--<button class=btn id="finalizar"><a href="cadastro.html">Finalizar Compra</a></button> -->
         <button class=btn id="tot" onclick="totalfinal()">Ver Total</button>     
         <input class="btn" type="text" readonly id="preçototal" style="width: 200px;"> 
         </div>
@@ -64,7 +63,7 @@
     <main>
         <h2>Formulário de Registro</h2><br>
         <form class="formul" id="meuFormulario" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="post" onsubmit="return validar();">
-            <center>
+        <center>
         <fieldset>
             <input class="col-12 form" type="text" id="nome" name="nome" required maxlength="50" placeholder="Seu Nome Completo">
             <br>
@@ -90,7 +89,7 @@
         </center>
         <div class="finalizar">
         <input type="submit" class="btn" id="finalizar" onclick="validar()" value="Finalizar Compra" style="padding-left: 10px; padding-right: 10px;">
-        <input class="float" type="button" value="Total de Vendas" onclick="vendasTotais()"> <input class="float" type="text" readonly id="vendas" style="width: 100px;">
+        <!--<input class="float" type="button" value="Total de Vendas" onclick="vendasTotais()"> <input class="float" type="text" readonly id="vendas" style="width: 100px;">-->
         </div>
 
     </main>

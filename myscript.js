@@ -1,29 +1,4 @@
 
-/*
-function checkout() {
- let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
- if (cart.length > 0) {
-     let total = 0;
-     let quantity = 0;
-
-     for (const item of cart) {
-         total += item.total;
-         quantity += item.quantity;
-     }
-
-     // Redirecionar para a página de cadastro com os parâmetros na URL
-     window.location.href = `cadastro.html?total=${total.toFixed(2)}&quantity=${quantity}`;
-
-     alert('Compra realizada com sucesso! Total: R$ ' + total.toFixed(2));
-     cart = [];
-     localStorage.setItem('cart', JSON.stringify(cart));
-     updateCart();
- } else {
-     alert('Adicione produtos ao carrinho antes de finalizar a compra.');
- }
-}*/
-
 var livros = ["Livro Incrível", "Livro Fantástico", "Aventuras Mágicas"];
 var preçoTotal = 0;
 
@@ -117,14 +92,12 @@ function textoemail() {
 }
 */
 
-function vendasTotais() {
+/*function vendasTotais() {
   var t1 = document.getElementById("preçototal1").value;
   var t2 = document.getElementById("preçototal2").value;
   var t3 = document.getElementById("preçototal3").value;
   
   var PreçoTotal = parseInt(t1) + parseInt(t2) + parseInt(t3);
-
-  // Verifica se o valor é válido antes de adicioná-lo ao array e armazená-lo no localStorage
   if (!isNaN(PreçoTotal)) {
     var arrayTotal = [];
     arrayTotal.push(PreçoTotal);
@@ -134,21 +107,18 @@ function vendasTotais() {
     console.error("Valor inválido. Certifique-se de inserir um número.");
   }
 
-  var totalVendas = 0; // Inicializa o total das vendas
+  var totalVendas = 0; 
 
-  // Recupera o array do localStorage
   var arraySalvo = JSON.parse(localStorage.getItem('arrayTotalSalvo'));
 
-  // Itera sobre o array para calcular o total das vendas
   for (let index = 0; index < arraySalvo.length; index++) {
     totalVendas += arraySalvo[index];
   }
 
   localStorage.setItem('total_vendas', totalVendas);
 
-  // Atualiza o elemento HTML com o ID 'vendas' com o total de vendas
   document.getElementById('vendas').value = totalVendas;
-}
+}*/
 
 
 
